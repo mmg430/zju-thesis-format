@@ -1,0 +1,4 @@
+interface:
+  display_name: "浙江大学研究生论文排版"
+  short_description: "直接采用内置排版方案，或按自定义 DOCX 模板建立配置并核验 WPS 与 PDF"
+  default_prompt: "使用 $zju-thesis-format，选择内置排版方案或自定义模板模式，核对目标文件版本与编辑权限，按选定来源处理格式，在独立副本完成 WPS 与 PDF 核验并标明未验证项。"

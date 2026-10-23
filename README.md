@@ -93,6 +93,7 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | [前置编号与正文重启](skills/zju-thesis-format/references/front-numbering-validation.md) | 无编号前页、前置连续编号、正文重启及目录对应；字体保留项另记 |
 | [论文封面复用](skills/zju-thesis-format/references/thesis-cover-validation.md) | 母版校名、校徽、字段与题目填写设置及有限 WPS 结果 |
 | [长题注、图文与跨页表格](skills/zju-thesis-format/references/figure-table-layout-validation.md) | 多行题注、嵌入式图片顺序、跨页续行及保留范围 |
+| [重复表头与续表题](skills/zju-thesis-format/references/table-continuation-validation.md) | 重复首行、显式续题、分段检查与重排边界 |
 | [浮动图片与页末图题](skills/zju-thesis-format/references/floating-caption-validation.md) | 原锚点与环绕复用、实际分离后的局部绑定及重开结果 |
 | [校徽图片复用](skills/zju-thesis-format/references/cover-emblem-validation.md) | 来源首页对象的尺寸、位置、排布与图像质量边界 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |

@@ -61,6 +61,6 @@
 
 封面校名及校徽锚定在包含说明框的段落中，删除整段会丢失图片或位置；只定向移除说明对象，保留同段原图与锚点。题目说明的显示 run 与待填内容的明确字号要求分开，见[封面复用](thesis-cover-validation.md)。
 
-后续[图文及跨页表格实测](figure-table-layout-validation.md)支持所查长题注、嵌入式原型顺序及普通两列表格的行内跨页；允许断行以 WPS 行属性和实际续行为准，不从缺少 cantSplit 单独判定结果。后续[重复表头与显式续表题](table-continuation-validation.md)已有限通过，仍不新增为母版默认；自动续表题未验证。
+后续[图文及跨页表格实测](figure-table-layout-validation.md)支持所查长题注、嵌入式原型顺序及普通两列表格的行内跨页；允许断行以 WPS 行属性和实际续行为准，不从缺少 cantSplit 单独判定结果。后续[重复表头与显式续表题](table-continuation-validation.md)及所查两行、横纵合并三行表头已有限通过，仍不新增为母版默认；自动续表题未验证。
 
 后续[浮动图片与页末图题专项](floating-caption-validation.md)已在独立样稿保存关闭重开后有限通过所查浮动原型及行内图题定向绑定；分页适配不改母版字体及外观，不扩大实际字体身份或完整文档验证范围。

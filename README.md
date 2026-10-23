@@ -75,4 +75,4 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 
 内置格式参考**浙江大学工程师学院研究生论文 DOCX 格式母版**；[zjuthesis 固定版本](skills/zju-thesis-format/references/zjuthesis-comparison.md)仅作实现参考。项目为社区工具，非学校或 WPS 官方模板；来源身份和适用边界见[来源说明](skills/zju-thesis-format/references/format-rules.md)，使用前核对相应提交要求。
 
-原创文档与脚本采用 [MIT 许可证](LICENSE)，上游署名见[第三方声明](THIRD_PARTY_NOTICES.md)。仓库不含论文、原始母版、私有日志、截图或字体文件。
+原创文档与脚本采用 [MIT 许可证](LICENSE)，上游署名见[第三方声明](THIRD_PARTY_NOTICES.md)。

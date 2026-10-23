@@ -55,3 +55,5 @@
 [重复表头与显式续表题专项](table-continuation-validation.md)已完成所查普通表的 WPS 保存关闭重开；验证重复首行及分段续题外观，不扩大字体身份或自动续题的通过范围。
 
 后续[表头专项](table-continuation-validation.md)已补充所查两行连续表头及横纵合并三行表头的 WPS 保存关闭重开有限结果；保持对应表内段落格式，不扩大至其他复杂合并或自动续题。
+
+[自动续题内容变化对照](table-continuation-validation.md)记录：所查分页与重复表头随增删文字保持，PAGE/PAGEREF 条件候选未生成续表标识，不采用；当前副本改用显式续题后重开通过，不扩大为自动续题通过。

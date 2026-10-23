@@ -61,7 +61,7 @@ license: MIT
 ## 已验证的处理方法
 
 - [长题注、图文与跨页表格](references/figure-table-layout-validation.md)：保留对应格式自然换行，检查图题上下顺序及跨页续行；所查多行题注、嵌入式原型和普通两列表格保存重开有限通过。重复表头及显式续表题见下项，自动续表题和其他浮动原型另验。
-- [重复表头与续表题](references/table-continuation-validation.md)：所查普通表重复首行、两行连续表头、横纵合并的三行表头及显式分段续题已保存关闭重开有限通过；属于技术适配，内容变化后重新校准分界，不称自动续题。
+- [重复表头与续表题](references/table-continuation-validation.md)：所查普通表重复首行、两行连续表头、横纵合并的三行表头及显式分段续题已保存关闭重开有限通过；属于技术适配，内容变化后重新校准分界，不称自动续题；PAGE/PAGEREF 条件候选经内容增删及重开实测未通过，不采用，其他自动方案待验证。
 - [浮动图片与页末绑定](references/floating-caption-validation.md)：所查浮动原型原样通过；行内图实际分离时局部绑定图片与中英文题注，修正后保存关闭重开有限通过。
 
 - [明确标注专项](references/annotation-format-validation.md)：保留对应对象继承，应用标注的行距、字重、题注及表线后保存关闭重开；所查代表对象有限通过。表线须选实际单元格后读取，文字边框默认值不代表表格宽度。

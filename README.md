@@ -98,7 +98,7 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |
 
 > [!NOTE]
-> 内置参数来自源 DOCX 实际设置及明确标注；差异和采用方式见[复核表](skills/zju-thesis-format/references/source-format-audit.md)。本轮落实的部分行距、标题加粗及表线尚未 WPS 复验；来源核查与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。中文长标题自然换行、多页目录、末行页码对齐和按需整条同页已有有限 DOCX 样稿通过记录；无编号封面/声明衔接前置大写罗马连续编号与正文单次重启，也已有独立样稿证据，属于按确认方案采用的技术适配。新增前页仍有缺字体及云字体提示，具体触发项和实际映射尚未确认。超出该范围的标题、复杂前置编号、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
+> 内置参数来自源 DOCX 实际设置及明确标注；差异和采用方式见[复核表](skills/zju-thesis-format/references/source-format-audit.md)。本轮所查行距、标题加粗、题注和表线已有[独立样稿有限实测](skills/zju-thesis-format/references/annotation-format-validation.md)；来源核查与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。中文长标题自然换行、多页目录、末行页码对齐和按需整条同页已有有限 DOCX 样稿通过记录；无编号封面/声明衔接前置大写罗马连续编号与正文单次重启，也已有独立样稿证据，属于按确认方案采用的技术适配。新增前页仍有缺字体及云字体提示，具体触发项和实际映射尚未确认。超出该范围的标题、复杂前置编号、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
 
 <details>
 <summary><strong>可选：PDF 辅助检查</strong></summary>

@@ -2,7 +2,7 @@
 
 本方案提取自浙江大学工程师学院研究生论文 DOCX 格式母版的实际属性。可以直接采用，无须另行提供该母版文件；它是一套已记录的格式配置，不是全校统一规范或完整母版的逐属性复制。
 
-应用时须同时读取[继承及覆盖](builtin-inheritance.md)，区分默认值、样式、编号与文字直接格式。以下单位和对象区别应保留。数值已经回查源文件属性；参考文献组合缩进已完成[有限 WPS 实测](bibliography-indent-validation.md)，[跨章静态页眉](chapter-header-validation.md)也完成有限实测，[自动目录适配](automatic-toc-validation.md)已有有限往返与 PDF 实测，指定 Mac WPS 的 Command 点击已有三级抽样证据，其他操作/环境须重验；其他未覆盖继承信息仍以 XML 回查为限。已有有限实测及未覆盖范围见[验证记录](font-validation-2026-10-23.md)。
+应用时须同时读取[继承及覆盖](builtin-inheritance.md)，区分默认值、样式、编号与文字直接格式。以下单位和对象区别应保留。数值已经回查源文件属性；参考文献组合缩进已完成[有限 WPS 实测](bibliography-indent-validation.md)，[跨章静态页眉](chapter-header-validation.md)也完成有限实测，[自动目录适配](automatic-toc-validation.md)已有单页及中文长标题多页 DOCX 实测，历史 PDF 检查另记范围，指定 Mac WPS 的 Command 点击已有三级抽样证据，其他操作/环境须重验；其他未覆盖继承信息仍以 XML 回查为限。已有有限实测及未覆盖范围见[验证记录](font-validation-2026-10-23.md)。
 
 ## 页面
 
@@ -55,4 +55,4 @@
 
 内置自动目录的日常步骤：更新整个目录 → 检查并将偏离的章级页码恢复为 Times New Roman 四号（14 磅）常规 → 保存关闭重开确认。章级标签及节级页码不随之统一改号；已对齐位置保留，见[具体步骤](automatic-toc-validation.md)。
 
-中文长标题与多页自动目录已有[专项有限实测](automatic-toc-validation.md)：沿用对应字号、行距及首行缩进自然换行，末行页码右对齐；条目拆页时可按对象启用段中不分页，属于技术适配，不改本表母版参数。修正后仅刷新页码并保存重开核对。
+中文长标题与多页自动目录已有[专项有限实测](automatic-toc-validation.md)：沿用对应字号、行距及首行缩进自然换行，末行页码右对齐；条目拆页时可按对象启用段中不分页，属于技术适配，不改本表母版参数。修正后若标题和层级未变，仅刷新页码并保存重开核对。

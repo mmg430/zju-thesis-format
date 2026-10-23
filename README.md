@@ -27,7 +27,7 @@
 | 用法 | 需要准备 | 格式依据 |
 | :--- | :--- | :--- |
 | **直接使用内置方案** | 需要排版的文档 | 仓库已包含的[排版参数](skills/zju-thesis-format/references/builtin-format.md)，无需另行提供源母版 |
-| **使用自定义模板** | 自己的 DOCX 模板和目标文档 | 提取模板对应对象的实际设置，建立新配置，不叠加内置参数 |
+| **使用自定义模板** | 自己的 DOCX 模板和目标文档 | 提取模板对应对象的实际设置及明确格式标注，建立新配置，不叠加内置参数 |
 
 仅检查现有文档时保持只读，不自动应用任何方案；排版修改按明确选定的格式执行。
 
@@ -48,7 +48,7 @@
 使用 $zju-thesis-format，以我提供的模板建立排版配置。
 模板：<模板 DOCX 路径>
 目标文档：<目标 DOCX 路径>
-逐对象提取实际设置，保留字体、样式继承和段内差异。
+逐对象提取实际设置及明确格式标注，保留字体、样式继承和段内差异。
 不套用内置参数；在副本上完成排版，在 WPS 中保存重开并核对 DOCX 实际格式。
 XML 仅辅助排查，PDF 按需检查。
 ```
@@ -84,6 +84,7 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | :--- | :--- |
 | [Skill 入口](skills/zju-thesis-format/SKILL.md) | 两种模式、执行方法和检查要求 |
 | [内置排版方案](skills/zju-thesis-format/references/builtin-format.md) | 可直接采用的格式参数及覆盖边界 |
+| [母版逐项复核](skills/zju-thesis-format/references/source-format-audit.md) | 实际设置、明确标注、差异采用和未实测项 |
 | [内置继承与覆盖](skills/zju-thesis-format/references/builtin-inheritance.md) | 默认值、样式、编号及直接设置；逐项标注验证范围 |
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
 | [DOCX 格式验收](skills/zju-thesis-format/references/full-manuscript-validation.md) | WPS 实际格式、保存重开及按需 PDF 检查 |
@@ -97,7 +98,7 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |
 
 > [!NOTE]
-> 内置参数来自源 DOCX 实际属性；参数读取与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。中文长标题自然换行、多页目录、末行页码对齐和按需整条同页已有有限 DOCX 样稿通过记录；无编号封面/声明衔接前置大写罗马连续编号与正文单次重启，也已有独立样稿证据，属于按确认方案采用的技术适配。新增前页仍有缺字体及云字体提示，具体触发项和实际映射尚未确认。超出该范围的标题、复杂前置编号、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
+> 内置参数来自源 DOCX 实际设置及明确标注；差异和采用方式见[复核表](skills/zju-thesis-format/references/source-format-audit.md)。本轮落实的部分行距、标题加粗及表线尚未 WPS 复验；来源核查与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。中文长标题自然换行、多页目录、末行页码对齐和按需整条同页已有有限 DOCX 样稿通过记录；无编号封面/声明衔接前置大写罗马连续编号与正文单次重启，也已有独立样稿证据，属于按确认方案采用的技术适配。新增前页仍有缺字体及云字体提示，具体触发项和实际映射尚未确认。超出该范围的标题、复杂前置编号、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
 
 <details>
 <summary><strong>可选：PDF 辅助检查</strong></summary>

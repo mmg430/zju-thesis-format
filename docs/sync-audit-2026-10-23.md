@@ -23,3 +23,13 @@ The distribution review inspected all tracked files and reachable historical blo
 ## Evidence boundary
 
 Built-in formatting values were checked against source DOCX properties. Limited WPS results and failures remain in the [font verification record](../skills/zju-thesis-format/references/font-validation-2026-10-23.md). The source artifacts are not distributed and cannot be independently rechecked from this package. No new WPS rendering, full-document, cross-platform, printing or PDF/A validation is claimed by these distribution checks.
+
+## Skill behavior and inheritance update
+
+The built-in parameter table now links to an attribute-only inheritance reference. It distinguishes document defaults, paragraph and character styles, numbering, direct paragraph settings, paragraph-mark properties and visible text runs. Twenty targeted source-property assertions passed; the source file remained unchanged. Localized mixed sizes, TOC tab stops, table overrides, bibliography numbering and header/footer layers are recorded without source text, fixed pagination or source artifacts.
+
+Read-only inspection no longer selects or applies the built-in format implicitly. Font diagnosis proceeds through text objects, style/numbering chains, defaults/themes and other declarations. Courier and Courier New are distinguished; Japanese theme mappings are candidates, not evidence that those fonts must be installed. Diagnostic deletion is not presented as a format-preserving repair.
+
+Validation now distinguishes XML inspection, saved DOCX changes, WPS roundtrips and PDF output. This update performed no new WPS experiment. Bibliography combined indentation, automatic TOC setup, dynamic chapter headers and newly discussed font-warning candidates remain unverified where stated in the skill.
+
+All 24 public files were scanned for private paths, source-document identifiers and personal process wording; no source documents, fonts or images were included. The repository's 56 local document links and the independently copied skill's 34 local links resolved; the copied skill passed the structure validator. Existing helper scripts and dependencies were unchanged, so this documentation update does not claim a new helper-test run.

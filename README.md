@@ -29,6 +29,8 @@
 | **直接使用内置方案** | 需要排版的文档 | 仓库已包含的[排版参数](skills/zju-thesis-format/references/builtin-format.md)，无需另行提供源母版 |
 | **使用自定义模板** | 自己的 DOCX 模板和目标文档 | 提取模板对应对象的实际设置，建立新配置，不叠加内置参数 |
 
+仅检查现有文档时保持只读，不自动应用任何方案；排版修改按明确选定的格式执行。
+
 ### 直接使用内置方案
 
 ```text
@@ -38,7 +40,7 @@
 未记录项保留原设置并说明；完成后核验 WPS 与 PDF 输出。
 ```
 
-内置参数可直接查阅，包括页边距、字体、字号、行距和段距等。它是可复用的格式配置，不包含完整 DOCX 母版；未列出的特殊对象和完整样式继承关系需按实际文档处理。
+内置参数可直接查阅，包括页边距、字体、字号、行距和段距等。它是可复用的格式配置，不包含完整 DOCX 母版；样式、编号和直接格式的已知关系见[继承说明](skills/zju-thesis-format/references/builtin-inheritance.md)，未列属性保留并标明。
 
 ### 使用自定义模板
 
@@ -75,6 +77,7 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 | :--- | :--- |
 | [Skill 入口](skills/zju-thesis-format/SKILL.md) | 两种模式、执行方法和检查要求 |
 | [内置排版方案](skills/zju-thesis-format/references/builtin-format.md) | 可直接采用的格式参数及覆盖边界 |
+| [内置继承与覆盖](skills/zju-thesis-format/references/builtin-inheritance.md) | 默认值、样式、编号及直接设置；新增属性未经 WPS 实测 |
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
 | [WPS 与 PDF 检查](skills/zju-thesis-format/references/full-manuscript-validation.md) | 保存、关闭重开、导出和输出核验 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |

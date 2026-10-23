@@ -48,3 +48,5 @@
 | 主题字体 | major Latin=Calibri Light，minor Latin=Calibri；Hans 均宋体，Hant 均新細明體；Jpan major=ＭＳ ゴシック、minor=ＭＳ 明朝；ea/cs 基础 typeface 为空 | 脚本映射声明不是实际调用证据；空 typeface 也不等于没有可继承字体。按[字体诊断](pdf-font-output.md)定位，不能据映射表要求全部安装 |
 
 记录格式时保留这些层次；没有实际渲染证据时只报告“属性已核对”。涉及分页、目录定位、编号对齐、字体映射或页眉定位的结果，在目标环境完成相应检查后才能标为通过。
+
+手工目录的引导符可见宽度不由已设制表位数值单独决定；自动目录先对照 WPS 实际位置，不能只为恢复 XML 数值而移动已对齐的页码列。内置恢复工具会同时应用段落参数，使用前须确认实际需要，见[DOCX 专项](automatic-toc-validation.md)。

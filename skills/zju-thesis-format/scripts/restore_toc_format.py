@@ -188,7 +188,7 @@ def main():
         message = str(exc) if isinstance(exc, TocError) else 'Cannot process this file or profile.'
         print('Error: ' + message, file=sys.stderr)
         return 1
-    print(f'Restored formatting for {count} TOC entries in a new copy. WPS/PDF verification is still required.')
+    print(f'Restored formatting for {count} TOC entries in a new copy. Check the saved/reopened DOCX in WPS; PDF checks are optional.')
     return 0
 
 

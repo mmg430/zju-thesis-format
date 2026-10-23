@@ -26,7 +26,7 @@ license: MIT
 
 - 格式复用与检查按上述模式选择参数来源；说明文字、实际属性、技术适配和验证状态分别记录。
 - DOCX 保存重开及按需 PDF 检查读[往返方法](references/full-manuscript-validation.md)；字体提示、嵌入或检索问题读[字体输出方法](references/pdf-font-output.md)及[有限实测记录](references/font-validation-2026-10-23.md)。新稿/新环境按本次对象核对 WPS 实际格式，不自动重跑历史全部实验。
-- 自动目录读[适配与有限实测](references/automatic-toc-validation.md)：母版手工条目与新增域配置分开；更新整个目录后先在 WPS 中检查，发现偏离母版时再恢复对应格式；明确采用内置方案且对应外观有偏差时可用专项中的新副本恢复工具；它会同时重应用段落参数，不对已合格位置仅为 XML 数值恢复而运行，不能将其默认数值套给自定义模板。DOCX 内点击按任务核对；需要 PDF 时另验其跳转。
+- 自动目录读[适配与有限实测](references/automatic-toc-validation.md)：母版手工条目与新增域配置分开；内置方案在每次更新整个目录后，将被改成小四/加粗的章级页码恢复为 Times New Roman 四号（14 磅）常规，保留标签及其他层级原格式和已对齐位置，再保存重开核对；明确采用内置方案且对应外观有偏差时可用专项中的新副本恢复工具；它会同时重应用段落参数，不对已合格位置仅为 XML 数值恢复而运行，不能将其默认数值套给自定义模板。DOCX 内点击按任务核对；需要 PDF 时另验其跳转。
 - 章标题和分节读[章首及空白页边界](references/chapter-layout-validation.md)；来源见[来源边界](references/format-rules.md)和[固定上游对照](references/zjuthesis-comparison.md)。
 
 ## 实施约束

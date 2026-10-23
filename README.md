@@ -50,7 +50,7 @@
 <a id="install"></a>
 ## 安装
 
-将完整 skill 目录复制到目标项目：
+将完整 skill 目录复制到目标项目。以下命令适用于 macOS / Linux 或 Git Bash；其他环境可手动复制整个目录：
 
 ```sh
 git clone https://github.com/mmg430/zju-thesis-format.git

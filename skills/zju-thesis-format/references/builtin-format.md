@@ -2,7 +2,7 @@
 
 本方案提取自浙江大学工程师学院研究生论文 DOCX 格式母版的实际设置及明确指向待填内容的格式标注。可以直接采用，无须另行提供该母版文件；它是一套已记录的格式配置，不是全校统一规范或完整母版的逐属性复制。
 
-应用时须同时读取[继承及覆盖](builtin-inheritance.md)，区分默认值、样式、编号与文字直接格式。以下单位和对象区别应保留。[实际属性与明确标注复核](source-format-audit.md)记录差异、采用方式和验证状态；本次落实的行距、加粗、题注和表线已有[独立样稿有限实测](annotation-format-validation.md)，仅覆盖专项所查对象。数值及标注已经回查源文件；参考文献组合缩进已完成[有限 WPS 实测](bibliography-indent-validation.md)，[跨章静态页眉](chapter-header-validation.md)也完成有限实测，[自动目录适配](automatic-toc-validation.md)已有单页及中文长标题多页 DOCX 实测，历史 PDF 检查另记范围，指定 Mac WPS 的 Command 点击已有三级抽样证据，其他操作/环境须重验；其他未覆盖继承信息仍以 XML 回查为限。已有有限实测及未覆盖范围见[验证记录](font-validation-2026-10-23.md)。
+应用时须同时读取[继承及覆盖](builtin-inheritance.md)，区分默认值、样式、编号与文字直接格式。以下单位和对象区别应保留。[实际属性与明确标注复核](source-format-audit.md)记录差异、采用方式和验证状态；本次落实的行距、加粗、题注和表线已有[独立样稿有限实测](annotation-format-validation.md)，仅覆盖专项所查对象。数值及标注已经回查源文件；参考文献组合缩进已完成[有限 WPS 实测](bibliography-indent-validation.md)，[跨章静态页眉](chapter-header-validation.md)也完成有限实测，[自动目录适配](automatic-toc-validation.md)已有单页及中文长标题多页 DOCX 实测，历史 PDF 检查另记范围，指定 Mac WPS 的 Command 点击已有三级抽样证据，其他操作/环境须重验；其他未覆盖继承信息仍以 XML 回查为限。各专项通过范围及剩余限制统一见[验证记录索引](validation-index.md)。
 
 ## 页面
 

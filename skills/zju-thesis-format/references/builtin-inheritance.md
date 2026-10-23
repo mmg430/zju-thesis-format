@@ -1,6 +1,6 @@
 # 内置方案的继承与覆盖
 
-本页记录原示例属性及[参数表](builtin-format.md)的继承依据，供定向排查。明确标注与示例有差异时，采用设置以[复核表](source-format-audit.md)为准，不能把原示例值当作冲突项的执行默认。本页不是逐字段一致性验收清单。以 WPS 中对应对象的实际格式与功能为准，不要求目标 XML 复刻源结构。以下已回查参考 DOCX 的 XML；**[参考文献组合缩进](bibliography-indent-validation.md)、[跨章静态页眉](chapter-header-validation.md)和[自动目录适配](automatic-toc-validation.md)已有各自限定范围的 WPS 实测，其余未覆盖新增信息仍以 XML 回查为限**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
+本页记录原示例属性及[参数表](builtin-format.md)的继承依据，供定向排查。明确标注与示例有差异时，采用设置以[复核表](source-format-audit.md)为准，不能把原示例值当作冲突项的执行默认。本页不是逐字段一致性验收清单。以 WPS 中对应对象的实际格式与功能为准，不要求目标 XML 复刻源结构。以下已回查参考 DOCX 的 XML；**[参考文献组合缩进](bibliography-indent-validation.md)、[跨章静态页眉](chapter-header-validation.md)和[自动目录适配](automatic-toc-validation.md)已有各自限定范围的 WPS 实测，其余未覆盖新增信息仍以 XML 回查为限**；各专项通过范围及剩余限制统一见[验证记录索引](validation-index.md)。只公开格式属性，不包含示例文字或源文件。
 
 ## 读取和应用方式
 

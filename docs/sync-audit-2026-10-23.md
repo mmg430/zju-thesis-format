@@ -41,3 +41,11 @@ A subsequent independent neutral sample tested the original bibliography paragra
 Only this combination and tested single/two-digit numbering scope are marked passed in the [specialized record](../skills/zju-thesis-format/references/bibliography-indent-validation.md). This does not establish a universal indent precedence or authorize flattening the original settings. Automatic TOC, dynamic chapter headers and other uncovered behaviors remain unverified. No source documents, local artifacts, screenshots, private paths or font files are published with this update.
 
 For this roundtrip update, all 25 public files passed the privacy scan, 63 repository-local links and 39 independently copied skill links resolved, and the copied skill passed its structure validator. Original source files and experiment evidence remain local.
+
+## Static chapter-header mapping roundtrip
+
+A subsequent Mac WPS 12.1.25867 experiment reused the source's static header structure in three neutral chapters with first and continuation pages. Baseline and saved/reopened PDFs had identical renders across all pages at 1400-pixel page height. A title-only rename control retained the old header text. Updating only the target section's resolved header part, followed by Save As, confirmed closure, disk reopen and export, changed only the intended chapter-header glyph region; other chapters remained unchanged.
+
+The [specialized record](../skills/zju-thesis-format/references/chapter-header-validation.md) marks static section mapping and targeted update passed within this scope. Automatic title following is absent in the tested static structure; STYLEREF, long names, shared-header splitting and other untested variants remain unverified. Section/header properties, page geometry, PAGE output, embedded-resource presence and actual reader search were checked. WPS's explicit serialization additions are recorded rather than described as byte-identical XML. No local artifacts or private identifiers are published.
+
+For the static-header update, all 26 public files passed the privacy scan, 70 repository-local links and 45 independently copied skill links resolved, and the copied skill passed the structure validator. No helper script or dependency was changed by this documentation update.

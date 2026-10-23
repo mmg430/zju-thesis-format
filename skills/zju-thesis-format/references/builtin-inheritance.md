@@ -1,6 +1,6 @@
 # 内置方案的继承与覆盖
 
-本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**除[参考文献组合缩进专项](bibliography-indent-validation.md)外，新增信息未经 WPS 保存重开与导出实测**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
+本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**[参考文献组合缩进](bibliography-indent-validation.md)和[跨章静态页眉](chapter-header-validation.md)已有有限 WPS 实测，其余未覆盖新增信息仍以 XML 回查为限**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
 
 ## 读取和应用方式
 
@@ -42,9 +42,9 @@
 
 | 对象 | 已读取属性 | 应用边界 |
 | --- | --- | --- |
-| 页眉样式（`a8`） | basedOn Normal，link `a9`；sz/szCs=18；居中、snapToGrid=0；制表位 center=4153 / right=8306 twip；底边 single、sz=6（0.75 磅）、space=1、color=auto | 所查页眉有宋体直接声明，也有直接段落对齐差异；不能把样式居中视为所有节的最终对齐 |
+| 页眉样式（`a8`） | basedOn Normal，link `a9`；sz/szCs=18；居中、snapToGrid=0；制表位 center=4153 / right=8306 twip；底边 single、sz=6（0.75 磅）、space=1、color=auto | 所查页眉有宋体直接声明，也有直接段落对齐差异；不能把样式居中视为所有节的最终对齐。两段结构的正文章页原型已通过静态分节对应及定向更新实测，其他原型不因此视为通过 |
 | 页脚样式（`a3`） | basedOn Normal，link `a4`；sz/szCs=18；左对齐、snapToGrid=0；制表位同页眉 | 页码所在段落另有 framePr：wrap=around、vAnchor=text、hAnchor=margin、xAlign=center、y=1。框架居中不等于段落 jc=center |
-| 字符样式及域 | 页眉/页脚关联字符样式 basedOn `a0`、sz/szCs=18；页码字符样式 `a5` basedOn `a0`，无自列字符属性；页码为 PAGE 域 | 页码字体尚须结合默认值和实际输出核对；不复制示例页码起点、节序或页眉章名，不声称自动跨章映射已验证 |
+| 字符样式及域 | 页眉/页脚关联字符样式 basedOn `a0`、sz/szCs=18；页码字符样式 `a5` basedOn `a0`，无自列字符属性；页码为 PAGE 域 | 页码字体尚须结合默认值和实际输出核对；不复制示例页码起点、节序或页眉章名，静态章名按节对应及定向更新已有限通过；只改正文标题不会自动更新，自动域方案仍未验证 |
 | 主题字体 | major Latin=Calibri Light，minor Latin=Calibri；Hans 均宋体，Hant 均新細明體；Jpan major=ＭＳ ゴシック、minor=ＭＳ 明朝；ea/cs 基础 typeface 为空 | 脚本映射声明不是实际调用证据；空 typeface 也不等于没有可继承字体。按[字体诊断](pdf-font-output.md)定位，不能据映射表要求全部安装 |
 
 记录格式时保留这些层次；没有实际渲染证据时只报告“属性已核对”。涉及分页、目录定位、编号对齐、字体映射或页眉定位的结果，在目标环境完成相应检查后才能标为通过。

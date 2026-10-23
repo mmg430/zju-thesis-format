@@ -82,7 +82,7 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 | [WPS 与 PDF 检查](skills/zju-thesis-format/references/full-manuscript-validation.md) | 保存、关闭重开、导出和输出核验 |
 | [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |
-| [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、分节及页眉页脚检查 |
+| [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、静态章名分节实测与自动更新边界 |
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |
 
 > [!NOTE]

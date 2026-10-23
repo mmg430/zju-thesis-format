@@ -26,3 +26,5 @@
 ## 本次文档补充的证据边界
 
 新增[内置继承及覆盖](builtin-inheritance.md)来自源 XML 回查，包含文档默认值、标题覆盖、目录混合格式、表格、书目编号及页眉页脚层次。这些信息初次补充时仅作 XML 回查；随后[书目组合缩进专项](bibliography-indent-validation.md)完成有限 WPS 往返，自动目录配置、跨章动态页眉仍未验证。Courier / Courier New 与日本语主题声明的排查规则是诊断方法，未据此宣称提示触发项或修复已通过。
+
+随后完成的[跨章页眉专项](chapter-header-validation.md)支持静态章名按节对应及定向更新；未新增 STYLEREF 自动映射结论，也不改变本页字体实验的覆盖范围。

@@ -81,7 +81,7 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
 | [WPS 与 PDF 检查](skills/zju-thesis-format/references/full-manuscript-validation.md) | 保存、关闭重开、导出和输出核验 |
 | [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
-| [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、更新后格式恢复、页码与跳转的结果和限制 |
+| [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、更新后恢复工具、页码与跳转的结果和限制 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |
 | [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、静态章名分节实测与自动更新边界 |
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |
@@ -110,7 +110,7 @@ Windows 使用 `.venv\Scripts\python.exe`。单独复制 skill 后，使用其 `
 
 脚本默认隐藏原文与源文件路径，无遥测或自动上传。它检查文字提取及字体资源中的嵌入流、映射是否存在，不能代替实际字体、阅读器检索或视觉检查。
 
-开发测试：`.venv/bin/python -m unittest discover -s tests -v`。现有 9 项合成检查使用中性 PDF/XML，不代表 WPS 渲染测试。检查范围见[审计记录](docs/sync-audit-2026-10-23.md)。
+开发测试：`.venv/bin/python -m unittest discover -s tests -v`。现有 13 项合成检查包括 9 项 PDF/XML 辅助检查和 4 项目录恢复检查，不代表 WPS 渲染测试。检查范围见[审计记录](docs/sync-audit-2026-10-23.md)。
 
 </details>
 

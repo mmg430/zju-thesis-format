@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "format_reference": "浙江大学工程师学院研究生论文 DOCX 格式母版",
+  "scope": "Derived TOC adaptation; explicit effective run properties preserve source appearance. Manual leaders become automatic dot tabs.",
+  "levels": {
+    "1": {
+      "paragraph": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tabs><w:tab w:val=\"right\" w:leader=\"dot\" w:pos=\"6141\" /></w:tabs><w:spacing w:line=\"360\" w:lineRule=\"auto\" /><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:sz w:val=\"28\" /><w:szCs w:val=\"28\" /></w:rPr></w:pPr>",
+      "label": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:b w:val=\"1\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:sz w:val=\"24\" /><w:szCs w:val=\"24\" /></w:rPr>",
+      "page": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:sz w:val=\"28\" /><w:szCs w:val=\"28\" /><w:b w:val=\"0\" /></w:rPr>"
+    },
+    "2": {
+      "paragraph": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tabs><w:tab w:val=\"right\" w:leader=\"dot\" w:pos=\"6141\" /></w:tabs><w:spacing w:line=\"360\" w:lineRule=\"auto\" /><w:ind w:firstLineChars=\"100\" w:firstLine=\"240\" /><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /></w:rPr></w:pPr>",
+      "label": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:b w:val=\"0\" /><w:sz w:val=\"24\" /><w:szCs w:val=\"24\" /></w:rPr>",
+      "page": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:b w:val=\"0\" /><w:sz w:val=\"24\" /><w:szCs w:val=\"24\" /></w:rPr>"
+    },
+    "3": {
+      "paragraph": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tabs><w:tab w:val=\"right\" w:leader=\"dot\" w:pos=\"6141\" /></w:tabs><w:spacing w:line=\"360\" w:lineRule=\"auto\" /><w:ind w:firstLineChars=\"200\" w:firstLine=\"480\" /><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /></w:rPr></w:pPr>",
+      "label": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:b w:val=\"0\" /><w:sz w:val=\"24\" /><w:szCs w:val=\"24\" /></w:rPr>",
+      "page": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Times New Roman\" w:eastAsia=\"仿宋\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\" /><w:bCs /><w:noProof /><w:color w:val=\"000000\" /><w:kern w:val=\"0\" /><w:b w:val=\"0\" /><w:sz w:val=\"24\" /><w:szCs w:val=\"24\" /></w:rPr>"
+    }
+  }
+}

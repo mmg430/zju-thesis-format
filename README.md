@@ -19,7 +19,7 @@
 
 面向浙江大学的研究生论文排版与核验工具。内置排版方案参考**浙江大学工程师学院研究生论文 DOCX 格式**。
 
-你可以直接使用仓库中已有的排版参数，也可以提供自己的 DOCX 模板，通过同一套方法提取格式、建立新的排版配置。支持页面、标题、正文、图表、目录和参考文献的格式处理，以及 WPS 保存重开与 PDF 输出检查。
+你可以直接使用仓库中已有的排版参数，也可以提供自己的 DOCX 模板，通过同一套方法提取格式、建立新的排版配置。支持页面、标题、正文、图表、目录和参考文献的格式处理，以 DOCX 在 WPS 中保存重开后的实际格式为验收重点；XML 辅助排查，PDF 按需检查。
 
 <a id="usage"></a>
 ## 两种用法
@@ -37,7 +37,7 @@
 使用 $zju-thesis-format，按内置排版方案处理文档。
 目标文档：<DOCX 路径>
 在副本上应用已记录的页面、标题、正文、图表及书目参数。
-未记录项保留原设置并说明；完成后核验 WPS 与 PDF 输出。
+未记录项保留原设置并说明；完成后在 WPS 中保存重开，核对 DOCX 实际格式；PDF 按需检查。
 ```
 
 内置参数可直接查阅，包括页边距、字体、字号、行距和段距等。它是可复用的格式配置，不包含完整 DOCX 母版；样式、编号和直接格式的已知关系见[继承说明](skills/zju-thesis-format/references/builtin-inheritance.md)，未列属性保留并标明。
@@ -49,7 +49,8 @@
 模板：<模板 DOCX 路径>
 目标文档：<目标 DOCX 路径>
 逐对象提取实际设置，保留字体、样式继承和段内差异。
-不套用内置参数；在副本上完成排版，并核验 WPS 与 PDF 输出。
+不套用内置参数；在副本上完成排版，在 WPS 中保存重开并核对 DOCX 实际格式。
+XML 仅辅助排查，PDF 按需检查。
 ```
 
 <a id="install"></a>
@@ -79,7 +80,7 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 | [内置排版方案](skills/zju-thesis-format/references/builtin-format.md) | 可直接采用的格式参数及覆盖边界 |
 | [内置继承与覆盖](skills/zju-thesis-format/references/builtin-inheritance.md) | 默认值、样式、编号及直接设置；逐项标注验证范围 |
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
-| [WPS 与 PDF 检查](skills/zju-thesis-format/references/full-manuscript-validation.md) | 保存、关闭重开、导出和输出核验 |
+| [DOCX 格式验收](skills/zju-thesis-format/references/full-manuscript-validation.md) | WPS 实际格式、保存重开及按需 PDF 检查 |
 | [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
 | [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、更新后恢复工具、页码与跳转的结果和限制 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |

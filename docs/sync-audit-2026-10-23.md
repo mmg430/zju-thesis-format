@@ -77,3 +77,9 @@ The new standard-library restoration helper and formatting-only built-in profile
 Four new neutral OOXML tests cover restoration and non-target preservation, existing-output/same-path rejection, unbalanced fields and uncovered levels; all thirteen helper tests passed. These synthetic checks are separate from the recorded WPS experiments. The helper also preserves original namespace declarations referenced only by compatibility attributes. Its final output completed an additional save/close/reopen/export; all six renders matched the earlier second-cycle output, and the new PDF link/search passed again. Native one-click retention remains failed, and arbitrary repetition, long/multiple-page TOCs, custom profiles and other environments remain unverified. Only format properties, code and sanitized summaries are distributed.
 
 For this restoration-tool update, all 30 public files passed the targeted privacy scan; 84 repository-local links and 56 independently copied skill links resolved. The copied skill passed structure validation, all thirteen tests passed against it, and its helper reproduced the exact final restored document XML from outside the repository. Source samples and verification artifacts remain private.
+
+## DOCX 验收重点调整
+
+统一入口、参数表、使用示例、界面提示及验证方法：以所选母版对应格式在 WPS 中保存重开后的实际显示与功能为准。XML 用于必要的属性提取与问题排查，不要求结构或字节一致；PDF 仅按导出、提交或输出诊断需要另查。历史实测保留原范围，未新增 WPS 或 PDF 实测通过结论；未做 PDF 检查不否定已通过的 DOCX 对象。脚本、参数数值和既有失败项不因本次说明调整而改变。
+
+本次为文档及入口元数据调整，未修改脚本或参数值；skill 结构校验和 diff 空白检查通过，90 处本地文档链接可解析。公开文件扫描未见个人路径、对话接手或个人写作流程表述，未纳入 DOCX、PDF、字库或截图。本次未启动 WPS 或新增渲染实验。

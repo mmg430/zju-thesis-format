@@ -77,9 +77,10 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 | :--- | :--- |
 | [Skill 入口](skills/zju-thesis-format/SKILL.md) | 两种模式、执行方法和检查要求 |
 | [内置排版方案](skills/zju-thesis-format/references/builtin-format.md) | 可直接采用的格式参数及覆盖边界 |
-| [内置继承与覆盖](skills/zju-thesis-format/references/builtin-inheritance.md) | 默认值、样式、编号及直接设置；新增属性未经 WPS 实测 |
+| [内置继承与覆盖](skills/zju-thesis-format/references/builtin-inheritance.md) | 默认值、样式、编号及直接设置；逐项标注验证范围 |
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
 | [WPS 与 PDF 检查](skills/zju-thesis-format/references/full-manuscript-validation.md) | 保存、关闭重开、导出和输出核验 |
+| [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |
 | [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、分节及页眉页脚检查 |
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |

@@ -1,6 +1,6 @@
 # 内置方案的继承与覆盖
 
-本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**本次新增信息未经 WPS 保存重开与导出实测**，不扩大[既有实测](font-validation-2026-10-23.md)的范围。只公开格式属性，不包含示例文字或源文件。
+本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**除[参考文献组合缩进专项](bibliography-indent-validation.md)外，新增信息未经 WPS 保存重开与导出实测**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
 
 ## 读取和应用方式
 
@@ -36,7 +36,7 @@
 | 表格直接属性 | 所查表直接取消左、右、内部横竖线；部分单元格另设 top/bottom single、sz=4；表宽 auto，表缩进 1384 twip | 边框同时受表级和单元格设置影响。缩进是所查对象的几何属性，不推广为所有表格的统一位置；列宽、合并、续表另查，不从示例行列数生成目标表 |
 | 参考文献条目样式 | ListParagraph1 basedOn Normal；line=360 auto、adjustRightInd=0、snapToGrid=0；firstLineChars=200、firstLine=420；仿宋/TNR，szCs=22 | 普通字号继承 12 磅；不要仅复制样式而丢失编号定义 |
 | 参考文献编号 | 条目引用 numId=1、ilvl=0，关联 abstractNumId=0；该级 decimal、start=1、lvlText=`[%1]`、lvlJc=left；编号级 ind left=420、hanging=420 twip，编号字形 TNR、sz/szCs=24 | 迁移时重映射编号 ID；start 是列表定义，不是固定页码。只记录所用级，不补造其余级 |
-| 参考文献直接属性 | 条目 jc=left、widowControl 开启、firstLineChars=0；run 有 szCs=21、kern=0 的局部设置 | 样式首行、编号悬挂和直接字符缩进须一起保留；**组合后的实际缩进及 WPS 行为未实测**，不能把 hanging=420 单独宣称为最终效果 |
+| 参考文献直接属性 | 条目 jc=left、widowControl 开启、firstLineChars=0；run 有 szCs=21、kern=0 的局部设置 | 样式首行、编号悬挂和直接字符缩进须一起保留；组合保持原样后已在指定 WPS 的单/双位数编号样稿中通过往返；首行文字与续行实测均距正文左边界 21 磅。仍不能将 hanging=420 单独当作可替代整组属性的规则，见专项记录 |
 
 ## 页眉页脚及主题
 

@@ -30,6 +30,14 @@ The built-in parameter table now links to an attribute-only inheritance referenc
 
 Read-only inspection no longer selects or applies the built-in format implicitly. Font diagnosis proceeds through text objects, style/numbering chains, defaults/themes and other declarations. Courier and Courier New are distinguished; Japanese theme mappings are candidates, not evidence that those fonts must be installed. Diagnostic deletion is not presented as a format-preserving repair.
 
-Validation now distinguishes XML inspection, saved DOCX changes, WPS roundtrips and PDF output. This update performed no new WPS experiment. Bibliography combined indentation, automatic TOC setup, dynamic chapter headers and newly discussed font-warning candidates remain unverified where stated in the skill.
+Validation now distinguishes XML inspection, saved DOCX changes, WPS roundtrips and PDF output. At that documentation-only stage, no new WPS experiment had been performed. Bibliography indentation was subsequently tested as recorded below; automatic TOC setup, dynamic chapter headers and newly discussed font-warning candidates retain their stated unverified scope.
 
 All 24 public files were scanned for private paths, source-document identifiers and personal process wording; no source documents, fonts or images were included. The repository's 56 local document links and the independently copied skill's 34 local links resolved; the copied skill passed the structure validator. Existing helper scripts and dependencies were unchanged, so this documentation update does not claim a new helper-test run.
+
+## Bibliography indentation roundtrip
+
+A subsequent independent neutral sample tested the original bibliography paragraph style, numbering level and direct indentation together in Mac WPS 12.1.25867. Save As, confirmed tab closure, disk reopen and normal PDF export completed. Twelve reference paragraphs retained their relevant properties after style-ID remapping; PDF first-text and continuation starts were 21 points to the right of the body left edge. Baseline and reopened output had identical page renders at 1800-pixel page height. Reader search returned the expected twelve matches.
+
+Only this combination and tested single/two-digit numbering scope are marked passed in the [specialized record](../skills/zju-thesis-format/references/bibliography-indent-validation.md). This does not establish a universal indent precedence or authorize flattening the original settings. Automatic TOC, dynamic chapter headers and other uncovered behaviors remain unverified. No source documents, local artifacts, screenshots, private paths or font files are published with this update.
+
+For this roundtrip update, all 25 public files passed the privacy scan, 63 repository-local links and 39 independently copied skill links resolved, and the copied skill passed its structure validator. Original source files and experiment evidence remain local.

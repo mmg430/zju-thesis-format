@@ -88,13 +88,13 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | [自定义模板参数提取](skills/zju-thesis-format/references/wps-profile.md) | 从其他 DOCX 模板建立配置 |
 | [DOCX 格式验收](skills/zju-thesis-format/references/full-manuscript-validation.md) | WPS 实际格式、保存重开及按需 PDF 检查 |
 | [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
-| [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、更新后恢复工具、页码与跳转的结果和限制 |
+| [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、长标题换行、多页目录、更新后修正及跳转 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |
 | [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、静态章名分节实测与自动更新边界 |
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |
 
 > [!NOTE]
-> 内置参数来自源 DOCX 实际属性；参数读取与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。长标题、多页目录、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
+> 内置参数来自源 DOCX 实际属性；参数读取与 WPS 实测分别记录。已验证修正方法与尚未验证范围[分别列出](skills/zju-thesis-format/SKILL.md#尚未验证的范围)。中文长标题与多页目录已有有限样稿通过记录；超出该范围的标题、复杂前置编号、特殊公式及其他环境等，按实际对象另查，不预判为错误，也不以历史失败否定已修正通过的结果。
 
 <details>
 <summary><strong>可选：PDF 辅助检查</strong></summary>

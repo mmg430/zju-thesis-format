@@ -22,6 +22,7 @@ license: MIT
 
 - 格式复用与检查按上述模式选择参数来源；说明文字、实际属性、技术适配和验证状态分别记录。
 - 保存重开与PDF验收读[往返方法](references/full-manuscript-validation.md)；字体提示、嵌入或检索问题读[字体输出方法](references/pdf-font-output.md)及[有限实测记录](references/font-validation-2026-10-23.md)。新稿/新环境必须重验。
+- 自动目录读[适配与有限实测](references/automatic-toc-validation.md)：母版手工条目与新增域配置分开；更新整个目录后须回查并恢复格式，DOCX 内点击与 PDF 跳转分别验收。
 - 章标题和分节读[章首及空白页边界](references/chapter-layout-validation.md)；来源见[来源边界](references/format-rules.md)和[固定上游对照](references/zjuthesis-comparison.md)。
 
 ## 实施约束
@@ -40,7 +41,7 @@ license: MIT
 
 ## 验证范围
 
-内置继承信息以源 XML 回查为基础；其中参考文献组合缩进已完成[独立样稿 WPS 往返实测](references/bibliography-indent-validation.md)，仅在所记环境和单/双位数编号等测试范围内通过。[跨章静态页眉](references/chapter-header-validation.md)亦完成有限往返，只有按节对应和定向更新通过；只改正文标题不自动更新静态章名。自动目录、STYLEREF 动态页眉及其他未覆盖属性继续标为未验证；不要将“已提取”写成“已渲染通过”。
+内置继承信息以源 XML 回查为基础；其中参考文献组合缩进已完成[独立样稿 WPS 往返实测](references/bibliography-indent-validation.md)，仅在所记环境和单/双位数编号等测试范围内通过。[跨章静态页眉](references/chapter-header-validation.md)亦完成有限往返，只有按节对应和定向更新通过；只改正文标题不自动更新静态章名。[自动目录适配](references/automatic-toc-validation.md)的三级收集、完整更新、更新后格式恢复及 PDF 链接已有限通过；原生完整更新不保留全部母版格式，DOCX 内精确点击跳转仍未确认。STYLEREF 动态页眉及其他未覆盖属性继续标为未验证；不要将“已提取”写成“已渲染通过”。
 
 所记Mac WPS版本的独立样稿已验证保留声明补齐同名字库的方法，包含Cambria底层样式触发定位；不代表完整母版或任意新稿通过。栅格图内字体、未覆盖字重/字符、Cambria Math公式、完整母版/论文往返、完整前置/脚注、盲审、其他WPS版本/操作系统、真实打印及PDF/A仍未全面验证。文本框高度修复属逐对象适配，不能照搬固定高度。静态页眉测试不证明跨章自动映射。
 

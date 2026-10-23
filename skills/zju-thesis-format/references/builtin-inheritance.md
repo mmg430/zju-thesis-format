@@ -1,6 +1,6 @@
 # 内置方案的继承与覆盖
 
-本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**[参考文献组合缩进](bibliography-indent-validation.md)和[跨章静态页眉](chapter-header-validation.md)已有有限 WPS 实测，其余未覆盖新增信息仍以 XML 回查为限**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
+本页补充[参数表](builtin-format.md)的属性来源。以下已回查参考 DOCX 的 XML；**[参考文献组合缩进](bibliography-indent-validation.md)、[跨章静态页眉](chapter-header-validation.md)和[自动目录适配](automatic-toc-validation.md)已有各自限定范围的 WPS 实测，其余未覆盖新增信息仍以 XML 回查为限**；字体等范围仍见[既有实测](font-validation-2026-10-23.md)。只公开格式属性，不包含示例文字或源文件。
 
 ## 读取和应用方式
 
@@ -19,7 +19,7 @@
 | 章标题样式（`1`） | basedOn Normal，link `10`；keepNext、keepLines、snapToGrid=0、before=440、after=240、居中、outlineLvl=0；西文/复杂文种 Times New Roman，东亚黑体；sz=32、szCs=44、bCs 开启、kern=44 | **可见章标题 run 另设东亚仿宋、b 开启、sz=30、szCs=30**。不能只复制样式而丢失直接覆盖，也不能把底层黑体当成最终章标题字体 |
 | 一级节标题样式（`2`） | basedOn Normal，link `20`；keepNext、keepLines、before/after=260、line=416 auto、outlineLvl=1；西文 Cambria、东亚宋体、cs=Times New Roman；b/bCs 开启、sz/szCs=32 | 对应标题 run 直接设西文 Times New Roman、东亚仿宋、sz/szCs=28、bCs=0；普通文字加粗来自样式。底层 Cambria 仍是诊断对象 |
 | 关联字符样式（`10`、`20`） | basedOn Default Paragraph Font（`a0`），分别 link 回章/节样式；各自保留与对应标题样式相同的字体、字号等字符声明；`a0` 无自列字符属性 | 未实际引用时也不能无依据认定与字体提示无关；不能把 link 当作所有 run 的自动字符样式 |
-| 二级节标题 | 无显式 pStyle，使用 Normal；段落直接 line=360 auto、widowControl 开启、autoSpaceDE/DN=0；文字直接设仿宋 / Times New Roman、kern=0，未直接设 sz | 普通字号继承 Normal 的 12 磅；不是 Heading 3，不补造大纲级别或段距 |
+| 二级节标题 | 无显式 pStyle，使用 Normal；段落直接 line=360 auto、widowControl 开启、autoSpaceDE/DN=0；文字直接设仿宋 / Times New Roman、kern=0，未直接设 sz | 普通字号继承 Normal 的 12 磅；不是 Heading 3，不补造段距；获准新增自动目录时，可只对选定标题补充 outlineLvl=2 并标为技术适配，见专项记录 |
 | 普通正文 | 无显式 pStyle，使用 Normal；直接 line=360 auto、firstLine=480、adjustRightInd=0、snapToGrid=0；run 直接设仿宋 / Times New Roman，部分 szCs=22 | 普通字号与复杂文种字号分开处理，不强行统一 |
 | 致谢、中文摘要、附录正文 | 对应所查段落无显式 pStyle；line=480 exact，firstLineChars=200 与 firstLine=480 并存 | 中文摘要有局部 run 明确 sz/szCs=28，其余普通文字可继承 12 磅；不能按段落标记的 14 磅统一整段 |
 | Abstract 标题 | 无显式 pStyle；居中、snapToGrid=0、beforeLines=100 与 before=312 并存；run 西文/复杂文种 Times New Roman、东亚声明方正小标宋简体，sz/szCs=30 | 英文显示 TNR 不等于东亚声明可删除；段前两个单位字段不相加换算 |
@@ -30,7 +30,7 @@
 | 对象 | 已读取的层次 | 应用边界 |
 | --- | --- | --- |
 | 目录标题 / 图表目录标题 | 目录标题无显式 pStyle，直接居中、仿宋/TNR、b、sz/szCs=30；图表目录标题引用章标题样式并有仿宋 15 磅直接覆盖 | 不把目录标题套成有章标题段距的样式 |
-| 目录条目 | 所查条目无显式 pStyle；直接 line=360 auto；右制表位 pos=6141 twip、leader=dot；run 有常规、加粗及局部 sz/szCs=28 等差异 | 未取得可复用的 TOC 层级样式链；所查域指令不含 TOC。不可补造各级缩进、统一条目字号，或声称源文件已设置自动目录；自动目录配置须另行适配并重验 |
+| 目录条目 | 无显式 pStyle，line=360 auto；右制表位 pos=6141 twip、leader=dot。所查章级标签继承 12 磅并加粗，引导符和页码 sz/szCs=28、常规；两级节条目 12 磅常规，分别 firstLineChars=100/200 与 firstLine=240/480 | 原文无 TOC 域及可复用 TOC 样式链。实际缩进与混合字符设置不可统一；新增域、三级样式和指定标题大纲属于[自动目录适配](automatic-toc-validation.md)。完整更新后格式恢复已有限通过，原生更新保留格式未通过，DOCX 精确点击仍未确认 |
 | 图题 / 表题 | 无显式 pStyle，字号由 run 直接 sz/szCs=21；居中；表题直接 firstLine=482；中英文 run 字体按参数表区分 | 不因缺少命名 Caption 样式而推断单倍行距；未列行距保留继承 |
 | 表格样式 | 所查表引用 TableGrid（`aa`），basedOn 默认表样式（`a1`）；默认单元格上下边距 0、左右 108 twip，表缩进 0；TableGrid 自列 Calibri/宋体/TNR、sz/szCs=20，六方向边框 single、sz=4 | 单元格文字的仿宋/TNR 10.5 磅直接设置覆盖底层；不能把底层 Calibri 当成表内最终字体 |
 | 表格直接属性 | 所查表直接取消左、右、内部横竖线；部分单元格另设 top/bottom single、sz=4；表宽 auto，表缩进 1384 twip | 边框同时受表级和单元格设置影响。缩进是所查对象的几何属性，不推广为所有表格的统一位置；列宽、合并、续表另查，不从示例行列数生成目标表 |

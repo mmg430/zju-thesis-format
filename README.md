@@ -69,7 +69,7 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 
 助手需要支持读取 `SKILL.md`；也可直接指定安装后的入口路径。已有同名版本时先比较并备份，宿主可能需要刷新会话。
 
-实际保存重开和导出检查需要 WPS 及相应操作工具。字体按合法授权自行准备，本仓库不附带或自动安装字体，也不自动控制 WPS。
+DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，无须导出 PDF、安装 PDF 检查依赖或比较 XML。字体按合法授权自行准备，本仓库不附带或自动安装字体，也不自动控制 WPS。
 
 <a id="resources"></a>
 ## 文档与工具

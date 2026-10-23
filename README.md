@@ -19,7 +19,7 @@
 | **内置格式** | 目标 DOCX | 已包含的[参数与继承信息](skills/zju-thesis-format/references/builtin-inheritance.md)，无需另备源母版；未记录项保留并说明 |
 | **自定义模板** | 模板及目标 DOCX | 提取模板实际设置与明确标注，不叠加内置参数 |
 
-仅检查时保持只读；排版修改在副本中完成，保留原稿。
+仅检查时保持只读；排版修改在副本中完成，保留原稿。具体方法见 [skill 入口](skills/zju-thesis-format/SKILL.md)，详细实测与限制见[验证记录](skills/zju-thesis-format/references/validation-index.md)。
 
 **采用内置格式**
 
@@ -35,16 +35,6 @@
 复用对应对象的实际格式与明确标注，不叠加内置参数；在副本上完成 WPS 保存关闭重开检查。
 ```
 
-## 格式、方法与限制
-
-| 类别 | 内容 |
-| :--- | :--- |
-| **内置格式** | 页面、标题、正文、图表、目录、参考文献等对应参数；[参数表](skills/zju-thesis-format/references/builtin-format.md)区分来源属性与采用设置 |
-| **已验证方法** | 目录更新后恢复格式、静态页眉同步、图题绑定、重复表头、显式续题等已有有限实测；定向修正后满足所选格式即可通过 |
-| **剩余限制** | 自动续表题所测条件候选未通过；部分前页字体映射及其他复杂对象、环境仍待核对。方法通过不等于任意新稿自动合格 |
-
-处理步骤：**应用所选格式 → WPS 检查 → 修正实际偏差 → 保存关闭重开确认。** 详细过程与覆盖范围见[验证记录索引](skills/zju-thesis-format/references/validation-index.md)，不沿用样稿固定页数或分表行号。
-
 <a id="install"></a>
 ## 安装
 
@@ -58,17 +48,6 @@ cp -R skills/zju-thesis-format /path/to/your-project/.agents/skills/
 ```
 
 替换项目路径；已有同名版本时先备份。助手需支持读取 `SKILL.md`，宿主可能需要刷新会话。WPS 验收需要相应操作工具；字体按合法授权自行准备，本仓库不附带字体、不自动安装或控制 WPS。
-
-<a id="resources"></a>
-## 文档
-
-| 入口 | 用途 |
-| :--- | :--- |
-| [SKILL.md](skills/zju-thesis-format/SKILL.md) | 模式选择、实施、修正与验收 |
-| [参数表](skills/zju-thesis-format/references/builtin-format.md) · [继承说明](skills/zju-thesis-format/references/builtin-inheritance.md) · [来源复核](skills/zju-thesis-format/references/source-format-audit.md) | 内置格式的依据与覆盖边界 |
-| [自定义模板](skills/zju-thesis-format/references/wps-profile.md) | 提取其他 DOCX 的对应设置 |
-| [验证记录索引](skills/zju-thesis-format/references/validation-index.md) | 各专项实测、修正方法及剩余限制 |
-| [可选 PDF 工具](docs/pdf-tools.md) | 按需输出检查及开发检查说明，非 DOCX 验收前提 |
 
 <a id="sources"></a>
 ## 来源与许可

@@ -90,6 +90,7 @@ DOCX 实际格式验收需要 WPS 及相应操作工具。仅检查 DOCX 时，�
 | [参考文献缩进实测](skills/zju-thesis-format/references/bibliography-indent-validation.md) | 保留组合设置的有限 WPS 往返结果 |
 | [自动目录实测](skills/zju-thesis-format/references/automatic-toc-validation.md) | 标题层级、长标题换行、多页目录、更新后修正及跳转 |
 | [前置编号与正文重启](skills/zju-thesis-format/references/front-numbering-validation.md) | 无编号前页、前置连续编号、正文重启及目录对应；字体保留项另记 |
+| [校徽图片复用](skills/zju-thesis-format/references/cover-emblem-validation.md) | 来源首页对象的尺寸、位置、排布与图像质量边界 |
 | [字体排查](skills/zju-thesis-format/references/pdf-font-output.md) | 缺字体提示、实际调用、嵌入及检索 |
 | [章标题与页眉页码](skills/zju-thesis-format/references/chapter-layout-validation.md) | 对象设置、静态章名分节实测与自动更新边界 |
 | [有限实测记录](skills/zju-thesis-format/references/font-validation-2026-10-23.md) | 实测环境、结果与覆盖范围 |

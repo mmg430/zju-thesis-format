@@ -61,6 +61,7 @@ license: MIT
 ## 已验证的处理方法
 
 - [长题注、图文与跨页表格](references/figure-table-layout-validation.md)：保留对应格式自然换行，检查图题上下顺序及跨页续行；所查多行题注、嵌入式原型和普通两列表格保存重开有限通过。重复表头/自动续表题和其他浮动原型另验。
+- [浮动图片与页末绑定](references/floating-caption-validation.md)：所查浮动原型原样通过；行内图实际分离时局部绑定图片与中英文题注，修正后保存关闭重开有限通过。
 
 - [明确标注专项](references/annotation-format-validation.md)：保留对应对象继承，应用标注的行距、字重、题注及表线后保存关闭重开；所查代表对象有限通过。表线须选实际单元格后读取，文字边框默认值不代表表格宽度。
 
@@ -74,7 +75,7 @@ license: MIT
 - [参考文献](references/bibliography-indent-validation.md)：保留已记录的组合缩进，核对编号、首行、续行和跨页显示；所查单/双位数编号已通过，不额外简化成单一悬挂值。
 - [字体与可编辑标注](references/font-validation-2026-10-23.md)：保留声明并按授权补齐同名字库后复查；个别文本框裁切可按实际对象调整框高，保留字体与位置后复查，不能推广固定高度。
 
-本轮明确标注已完成[独立样稿实测](references/annotation-format-validation.md)：所查代表正文 1.5 倍、Abstract 加粗、题注字号/单倍及单元格 0.75 pt 表线在保存关闭重开后有限通过。后续[图文与跨页表格专项](references/figure-table-layout-validation.md)已补充多行长题注、嵌入式图像上下顺序和普通两列表格行内跨页；其他原型、页末绑定及复杂表格仍另查，不扩大为完整母版通过。
+本轮明确标注已完成[独立样稿实测](references/annotation-format-validation.md)：所查代表正文 1.5 倍、Abstract 加粗、题注字号/单倍及单元格 0.75 pt 表线在保存关闭重开后有限通过。后续[图文与跨页表格专项](references/figure-table-layout-validation.md)已补充多行长题注、嵌入式图像上下顺序和普通两列表格行内跨页；后续[页末绑定专项](references/floating-caption-validation.md)已补充所查浮动原型及定向绑定修复；其他原型及复杂表格仍另查，不扩大为完整母版通过。
 
 ## 尚未验证的范围
 

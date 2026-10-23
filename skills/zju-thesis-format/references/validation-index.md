@@ -6,6 +6,7 @@
 
 | 专项 | 已有有限证据 | 剩余边界 |
 | --- | --- | --- |
+| [字体、字号与颜色属性核对](font-size-color-audit.md) | 已核对内容、说明、继承及颜色/字体例外；属于源属性证据 | 本轮没有 WPS 实测，不算新增颜色渲染或前页字体通过 |
 | [明确标注](annotation-format-validation.md) | 代表正文行距、Abstract 加粗、题注单倍/字号、表线 | 其他对象变体和完整母版 |
 | [自动目录](automatic-toc-validation.md) | 更新后格式恢复、长标题、多页三级目录、页码对齐及代表跳转；Mac WPS 用 Command 单击 | 超页单条、不可断词/公式混排及其他目录类型 |
 | [静态页眉](chapter-header-validation.md) | 按节同步章名并核对相邻章 | 其他首页/奇偶原型、共享页眉拆分及动态 STYLEREF |

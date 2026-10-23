@@ -27,7 +27,7 @@ license: MIT
 - 格式复用与检查按上述模式选择参数来源；说明文字、实际属性、技术适配和验证状态分别记录。
 - DOCX 保存重开及按需 PDF 检查读[往返方法](references/full-manuscript-validation.md)；字体提示、嵌入或检索问题读[字体输出方法](references/pdf-font-output.md)及[有限实测记录](references/font-validation-2026-10-23.md)。新稿/新环境按本次对象核对 WPS 实际格式，不自动重跑历史全部实验。
 - 自动目录读[适配与有限实测](references/automatic-toc-validation.md)：母版手工条目与新增域配置分开；内置方案在每次更新整个目录后，将被改成小四/加粗的章级页码恢复为 Times New Roman 四号（14 磅）常规，保留标签及其他层级原格式和已对齐位置，再保存重开核对；明确采用内置方案且对应外观有偏差时可用专项中的新副本恢复工具；它会同时重应用段落参数，不对已合格位置仅为 XML 数值恢复而运行，不能将其默认数值套给自定义模板。DOCX 内点击按任务核对；需要 PDF 时另验其跳转。
-- 前置页编号和正文重启读[编号适配实测](references/front-numbering-validation.md)：先确认目标编号方案；前置大写罗马连续、正文从 1 重启及后续节延续已有有限通过证据，不将该适配写成母版默认要求。
+- 前置页编号和正文重启读[编号适配实测](references/front-numbering-validation.md)：先确认目标编号方案；封面/声明不显示页码与前置大写罗马连续、正文从 1 重启及后续节延续的组合已有有限通过证据；新增封面/声明对象的字体提示及映射仍有保留项，不将该适配写成母版默认要求。
 - 章标题和分节读[章首及空白页边界](references/chapter-layout-validation.md)；来源见[来源边界](references/format-rules.md)和[固定上游对照](references/zjuthesis-comparison.md)。
 
 ## 实施约束
@@ -63,7 +63,7 @@ license: MIT
 
 - [目录](references/automatic-toc-validation.md)：完整更新、按需恢复章级页码及其他偏差、确认条目与跳转；中文长标题自然换行、多页目录和单双位数页码已有限通过。拆页的可容纳条目可按专项启用段中不分页（技术适配），修正后若标题和层级未变，仅刷新页码，再保存重开核对。原生更新可能改写格式是修正步骤的原因，不是修正后 DOCX 仍不合格。
 - [页眉](references/chapter-header-validation.md)：按节对应静态章名，标题改名后同步更新对应页眉，再查章首、续页和相邻章。无需为达到母版静态格式新增自动章名域。
-- [前置编号及正文重启](references/front-numbering-validation.md)：保留母版页眉页脚外观，按确认方案分节设置编号；更新目录并修正格式后保存重开，核对前置连续、正文重启及后续延续。
+- [前置编号及正文重启](references/front-numbering-validation.md)：保留母版页眉页脚外观，按确认方案分节设置编号；更新目录并修正格式后保存重开，核对无编号前页、前置连续、正文重启及后续延续。该编号通过不等于封面/声明字体一致性通过，见专项保留项。
 - [参考文献](references/bibliography-indent-validation.md)：保留已记录的组合缩进，核对编号、首行、续行和跨页显示；所查单/双位数编号已通过，不额外简化成单一悬挂值。
 - [字体与可编辑标注](references/font-validation-2026-10-23.md)：保留声明并按授权补齐同名字库后复查；个别文本框裁切可按实际对象调整框高，保留字体与位置后复查，不能推广固定高度。
 

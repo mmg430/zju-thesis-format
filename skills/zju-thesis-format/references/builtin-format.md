@@ -81,3 +81,5 @@
 
 
 参考文献的字体与组合缩进和题录著录规则分开；明确选用 GB/T 7714—2025 时按[引用规则](citation-rules.md)办理，不把母版旧题录说明当作该标准全文；常用非期刊类型见[分类著录规则](citation-resource-types.md)，不改变本表外观参数。
+
+书目题录补充及已有导出偏差的修正见[其他类型](citation-special-cases.md)和[导出专项](citation-output-validation.md)；只修正内容与适配，不更改本表母版外观。

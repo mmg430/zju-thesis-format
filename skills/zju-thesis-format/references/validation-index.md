@@ -36,3 +36,5 @@
 文献标准选择、正式文本专项条款及母版差异核对见[引用规则](citation-rules.md)；2026-10-24 已取得扫描全文并核对所列条款，不代表全部条款、导出样式或新增 WPS 实测通过。
 
 专著/书中析出、学位论文、会议文献及网站/网页的正式条款补核见[分类著录规则](citation-resource-types.md)；仅新增来源核对，不新增WPS或CSL通过结论。
+
+其他类型、特殊情况与非连续页码依据见[补充核对](citation-special-cases.md)；候选CSL修正及独立书目WPS保存关闭重开有限结果见[导出专项](citation-output-validation.md)，不扩为Zotero客户端或整稿通过。

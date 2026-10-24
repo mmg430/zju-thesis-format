@@ -21,7 +21,7 @@ license: MIT
 
 封面（含校名、校徽）、中文题名页、独创性声明及版权授权书、致谢和作者简历预留，采用[前页格式表](references/front-matter-format.md)；分别保留版式、字体、字号及颜色来源，不套普通正文。
 
-文献著录标准与 DOCX 外观分开：按[引用规则及母版差异表](references/citation-rules.md)处理明确选定的 GB/T 7714—2025，字体、字号、颜色和缩进仍沿用所选格式；专著、学位论文、会议文献与网络资源按[分类著录规则](references/citation-resource-types.md)区分。
+文献著录标准与 DOCX 外观分开：按[引用规则及母版差异表](references/citation-rules.md)处理明确选定的 GB/T 7714—2025，字体、字号、颜色和缩进仍沿用所选格式；专著、学位论文、会议文献与网络资源按[分类著录规则](references/citation-resource-types.md)区分，其他类型及特殊情况见[补充核对](references/citation-special-cases.md)，导出偏差按[专项方法](references/citation-output-validation.md)修正后应用母版外观。
 
 ## 实施与验收
 

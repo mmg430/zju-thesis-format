@@ -32,3 +32,5 @@
 - [字体诊断与可选 PDF](pdf-font-output.md)：声明/实际调用、缺字体提示、嵌入与文字层分别判断。
 - [章标题及空白页](chapter-layout-validation.md)：保留对象设置及相关验证边界，不另解释成固定空行。
 - [格式来源](format-rules.md)与[zjuthesis 对照](zjuthesis-comparison.md)：来源和实现参考，不覆盖当前采用参数。
+
+文献标准选择及元数据核对见[引用规则](citation-rules.md)；标准接入不是新增 WPS 通过结论。

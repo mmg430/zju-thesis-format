@@ -33,4 +33,4 @@
 - [章标题及空白页](chapter-layout-validation.md)：保留对象设置及相关验证边界，不另解释成固定空行。
 - [格式来源](format-rules.md)与[zjuthesis 对照](zjuthesis-comparison.md)：来源和实现参考，不覆盖当前采用参数。
 
-文献标准选择及元数据核对见[引用规则](citation-rules.md)；标准接入不是新增 WPS 通过结论。
+文献标准选择、正式文本专项条款及母版差异核对见[引用规则](citation-rules.md)；2026-10-24 已取得扫描全文并核对所列条款，不代表全部条款、导出样式或新增 WPS 实测通过。

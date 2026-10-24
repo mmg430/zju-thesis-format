@@ -34,3 +34,5 @@
 - [格式来源](format-rules.md)与[zjuthesis 对照](zjuthesis-comparison.md)：来源和实现参考，不覆盖当前采用参数。
 
 文献标准选择、正式文本专项条款及母版差异核对见[引用规则](citation-rules.md)；2026-10-24 已取得扫描全文并核对所列条款，不代表全部条款、导出样式或新增 WPS 实测通过。
+
+专著/书中析出、学位论文、会议文献及网站/网页的正式条款补核见[分类著录规则](citation-resource-types.md)；仅新增来源核对，不新增WPS或CSL通过结论。
